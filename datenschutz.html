@@ -21,7 +21,7 @@
     <p><strong>Verantwortlich im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</strong></p>
     <p>Moritz Stieber (Einzelunternehmen)<br>
     [Straße und Hausnummer]<br>
-    76133 Karlsruhe<br>
+    70180 Stuttgart<br>
     Deutschland<br>
     <a href="mailto:taskturtlesupport@proton.me">taskturtlesupport@proton.me</a></p>
   </div>
@@ -46,10 +46,11 @@
     <p>Für den Zugriff auf den Kalender und Benachrichtigungen gilt Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Diese Einwilligungen kannst du jederzeit in den Systemeinstellungen widerrufen.</p>
   </div>
 
-  <h2>§ 4 Lokale Datenspeicherung</h2>
+  <h2>§ 4 Datenspeicherung und iCloud-Synchronisation</h2>
   <div class="section">
-    <p>Alle Daten werden ausschließlich lokal auf deinem Gerät gespeichert (mittels SwiftData / on-device Datenbank). Es erfolgt keine Übertragung an Server des Entwicklers oder an Dritte.</p>
-    <p>Wenn du die App deinstallierst, werden alle lokal gespeicherten Daten unwiderruflich gelöscht.</p>
+    <p>Deine Daten werden mit Apples SwiftData-Framework primär lokal auf deinem Gerät gespeichert. Eine Übertragung an Server des Entwicklers erfolgt nicht.</p>
+    <p>Wenn du iCloud auf deinem Gerät aktiviert hast, werden die Daten zusätzlich verschlüsselt über <strong>Apple CloudKit</strong> in deinem privaten iCloud-Bereich abgelegt. Verarbeiter ist in diesem Fall Apple; die Daten sind für den Entwickler nicht einsehbar. Apple verarbeitet sie gemäß <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noopener">Apples Datenschutzerklärung</a>. Du kannst die iCloud-Synchronisation jederzeit in den iOS-Einstellungen unter <em>[Dein Name] → iCloud → Apps mit iCloud</em> deaktivieren.</p>
+    <p>Wenn du die App deinstallierst, werden alle lokal gespeicherten Daten unwiderruflich gelöscht. In iCloud synchronisierte Daten bleiben bestehen, bis du sie über die iOS-Einstellungen entfernst.</p>
   </div>
 
   <h2>§ 5 Kalender-Zugriff (EventKit)</h2>
@@ -85,16 +86,57 @@
     <p>TaskTurtle verwendet keine Analyse-Tools, kein Tracking und keine Werbung. Es werden keinerlei Daten an Dritte weitergegeben oder verkauft.</p>
     <p>Folgende Drittanbieter-Dienste werden genutzt:</p>
     <ul>
-      <li>Apple (App Store, EventKit) – siehe § 5, § 7</li>
+      <li>Apple (App Store, EventKit, iCloud / CloudKit) – siehe § 4, § 5, § 7</li>
       <li>RevenueCat (Abo-Verwaltung) – siehe § 7</li>
     </ul>
   </div>
 
-  <h2>§ 9 Deine Rechte (Art. 15–21 DSGVO)</h2>
+  <h2>§ 9 Übermittlung in Drittländer (Art. 13 Abs. 1 lit. f DSGVO)</h2>
+  <div class="section">
+    <p>Im Rahmen der Abo-Verwaltung durch RevenueCat (Sitz in den USA) sowie der iCloud-Synchronisation durch Apple kann eine Übermittlung personenbezogener Daten in die USA erfolgen.</p>
+    <p>Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework (Angemessenheitsbeschluss der EU-Kommission vom 10. Juli 2023) bzw. ergänzend auf Grundlage der Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO. Sowohl Apple als auch RevenueCat sind unter dem Data Privacy Framework zertifiziert.</p>
+  </div>
+
+  <h2>§ 10 Speicherdauer (Art. 13 Abs. 2 lit. a DSGVO)</h2>
+  <div class="section">
+    <p>Deine Daten werden gespeichert, solange du die App nutzt. Mit der Deinstallation der App werden alle lokal gespeicherten Daten unwiderruflich gelöscht. In iCloud synchronisierte Daten bleiben bestehen, bis du sie manuell über die iOS-Einstellungen entfernst oder die iCloud-Synchronisation für TaskTurtle deaktivierst.</p>
+    <p>Die bei RevenueCat gespeicherte anonyme App-User-ID wird so lange vorgehalten, wie dies zur Verwaltung deines Abo-Status erforderlich ist.</p>
+  </div>
+
+  <h2>§ 11 Deine Rechte (Art. 15–21 DSGVO)</h2>
   <div class="section">
     <p>Du hast folgende Rechte bezüglich deiner Daten:</p>
     <ul>
-      <li><strong>Auskunftsrecht (Art. 15):</strong> Da alle Daten lokal auf deinem Gerät liegen, hast du jederzeit vollen Zugriff.</li>
+      <li><strong>Auskunftsrecht (Art. 15):</strong> Da alle Daten lokal auf deinem Gerät bzw. in deinem privaten iCloud-Bereich liegen, hast du jederzeit vollen Zugriff.</li>
       <li><strong>Recht auf Berichtigung (Art. 16):</strong> Du kannst alle Einträge jederzeit in der App bearbeiten.</li>
-      <li><strong>Recht auf Löschung (Art. 17):</strong> Du kannst einzelne Einträge in der App löschen oder alle Daten durch Deinstallation der App entfernen.</li>
-      <li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18):</strong> Du kannst Kalenderzugriff
+      <li><strong>Recht auf Löschung (Art. 17):</strong> Du kannst einzelne Einträge in der App löschen oder alle Daten durch Deinstallation der App und Löschung in den iCloud-Einstellungen entfernen.</li>
+      <li><strong>Recht auf Einschränkung der Verarbeitung (Art. 18):</strong> Du kannst Kalenderzugriff, Benachrichtigungen und iCloud-Synchronisation jederzeit in den Systemeinstellungen deaktivieren.</li>
+      <li><strong>Recht auf Datenübertragbarkeit (Art. 20):</strong> Da keine Daten beim Entwickler gespeichert werden, liegen alle Daten bereits in deinem eigenen Zugriffsbereich (Gerät bzw. iCloud).</li>
+      <li><strong>Widerspruchsrecht (Art. 21):</strong> Du kannst der Verarbeitung deiner Daten jederzeit widersprechen, indem du die App deinstallierst.</li>
+      <li><strong>Widerruf der Einwilligung (Art. 7 Abs. 3):</strong> Erteilte Einwilligungen (Kalender, Benachrichtigungen) kannst du jederzeit in den iOS-Einstellungen widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt davon unberührt.</li>
+    </ul>
+    <p>Zur Ausübung deiner Rechte kannst du dich jederzeit an <a href="mailto:taskturtlesupport@proton.me">taskturtlesupport@proton.me</a> wenden.</p>
+  </div>
+
+  <h2>§ 12 Automatisierte Entscheidungsfindung (Art. 13 Abs. 2 lit. f DSGVO)</h2>
+  <div class="section">
+    <p>Eine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne des Art. 22 DSGVO findet nicht statt.</p>
+  </div>
+
+  <h2>§ 13 Beschwerderecht (Art. 77 DSGVO)</h2>
+  <div class="section">
+    <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständige Aufsichtsbehörde für den Verantwortlichen ist:</p>
+    <p>Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg<br>
+    Lautenschlagerstraße 20<br>
+    70173 Stuttgart<br>
+    <a href="https://www.baden-wuerttemberg.datenschutz.de" target="_blank" rel="noopener">www.baden-wuerttemberg.datenschutz.de</a></p>
+  </div>
+
+  <h2>§ 14 Änderungen dieser Datenschutzerklärung</h2>
+  <div class="section">
+    <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Rechtslage oder die Funktionen der App ändern. Bei wesentlichen Änderungen informieren wir dich innerhalb der App.</p>
+    <p><strong>Stand:</strong> April 2026</p>
+  </div>
+
+</body>
+</html>
